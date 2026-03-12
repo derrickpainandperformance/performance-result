@@ -337,7 +337,7 @@ var PROFILES = {
     icon1: "⚡", label1: "Primary Bottleneck", text1: "Under-loading and excess caution. Your body needs progressive challenge, not more rest.",
     icon2: "🎯", label2: "Your Lever", text2: "A structured return-to-performance plan with clear progressions and benchmarks.",
     body3: "You don't need more information. You need a plan and the confidence to execute it.",
-    guideLink: "#",
+    guideLink: "https://drive.google.com/file/d/1BBcs27bs40TFMGAWKYvMH2NR-tGqILDn/view?usp=drive_link",
     nextTitle: "Ready to Close the Gap?",
     nextBody: "If you want a clear, personalized plan to get from where you are to where you want to be — without the guesswork — let's talk.",
     bar: 25
@@ -354,7 +354,7 @@ var PROFILES = {
     icon1: "🔬", label1: "Primary Bottleneck", text1: "A combination of physical deconditioning, recovery deficits, and limiting beliefs working together.",
     icon2: "🧭", label2: "Your Lever", text2: "Addressing the full picture — training, recovery, beliefs, and meaningful goals — not just symptoms.",
     body3: "Breaking a plateau requires changing the approach, not just increasing the effort.",
-    guideLink: "#",
+    guideLink: "https://drive.google.com/file/d/1QcizBRkpccguQ4U49-oxs1QPf7e5-kbX/view?usp=drive_link",
     nextTitle: "Ready to Break Through?",
     nextBody: "If you've been stuck and the standard approach isn't cutting it, a conversation about what's actually going on could change everything.",
     bar: 55
@@ -371,7 +371,7 @@ var PROFILES = {
     icon1: "🧠", label1: "Primary Bottleneck", text1: "An overprotective nervous system amplified by fear, avoidance, deconditioning, and lost confidence.",
     icon2: "🌱", label2: "Your Lever", text2: "Gradual, meaningful re-engagement with the activities that matter most — guided by someone who sees the full picture.",
     body3: "The life and performance level you want is still available. The walls that pain built are not permanent.",
-    guideLink: "#",
+    guideLink: "https://drive.google.com/file/d/1G3Hutv1IJaLlpWuhTHEYhWQq-inMfnuZ/view?usp=drive_link",
     nextTitle: "The Path Back Starts Here.",
     nextBody: "If you're ready for an approach that addresses what's actually driving this — not just the symptoms — I'd love to connect.",
     bar: 82
@@ -468,6 +468,7 @@ function showResult(key, total) {
   document.getElementById("r-body3").textContent = d.body3;
   document.getElementById("r-next-title").textContent = d.nextTitle;
   document.getElementById("r-next-body").textContent = d.nextBody;
+  document.getElementById("r-guide-btn").href = d.guideLink;
 
   go(12);
   setTimeout(function(){ document.getElementById("r-sbar").style.width = d.bar + "%"; }, 700);
